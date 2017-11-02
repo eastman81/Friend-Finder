@@ -44,70 +44,70 @@
 								<input type="text" class="form-control" id="user_photo">
 							</div>
 
-							<!-- <div>
+							<div>
 								<strong>For the statements below, respond with a number 1-5 for how strongly you relate to the statement. 5 is the strongest.</strong>
 							</div>
-							<br> -->
+							<br>
 						
 							<!-- Question 1 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">I like to stay at home on the weekend.</label>
 								<input type="text" class="form-control" id="questionOne">
-							</div> -->
+							</div>
 
 							<!-- Question 2 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">I love to listen to music.</label>
 								<input type="text" class="form-control" id="questionTwo">
-							</div> -->
+							</div>
 
 							<!-- Question 3 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">I like to play sports.</label>
 								<input type="text" class="form-control" id="questionThree">
-							</div> -->
+							</div>
 
 							<!-- Question 4 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">When I am getting to know someone, I like to go out on dates.</label>
 								<input type="text" class="form-control" id="questionFour">
-							</div> -->
+							</div>
 
 							<!-- Question 5 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">I love traveling!</label>
 								<input type="text" class="form-control" id="questionFive">
-							</div> -->
+							</div>
 
 							<!-- Question 6 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">I consider myself a happy person.</label>
 								<input type="text" class="form-control" id="questionSix">
-							</div> -->
+							</div>
 
 							<!-- Question 7 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">I get stressed easily.</label>
 								<input type="text" class="form-control" id="questionSeven">
-							</div> -->
+							</div>
 
 							<!-- Question 8 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">Family is more important than anything in life.</label>
 								<input type="text" class="form-control" id="questionEight">
 							</div>
- -->
+
 							<!-- Question 9 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">How strongly do you believe that we are not alone in the universe.</label>
 								<input type="text" class="form-control" id="questionNine">
-							</div> -->
+							</div>
 
 							<!-- Question 10 -->
-							<!-- <div class="form-group">
+							<div class="form-group">
 								<label for="">I like pets.</label>
 								<input type="text" class="form-control" id="questionTen">
-							</div> -->
+							</div>
 
 							<button type="submit" class="btn btn-primary submit">Submit</button>
 						</form>
@@ -136,19 +136,19 @@
 		var newFriend = {
 			name: $('user_name').val().trim(),
 			photo: $('user_photo').val().trim()
-			// scores: 
-			// 	[
-			// 		$('questionOne').val().trim(),
-			// 		$('questionTwo').val().trim(),
-			// 		$('questionThree').val().trim(),
-			// 		$('questionFour').val().trim(),
-			// 		$('questionFive').val().trim(),
-			// 		$('questionSix').val().trim(),
-			// 		$('questionSeven').val().trim(),
-			// 		$('questionEight').val().trim(),
-			// 		$('questionNine').val().trim(),
-			// 		$('questionTen').val().trim()
-			// 	]
+			scores: 
+				[
+					$('questionOne').val().trim(),
+					$('questionTwo').val().trim(),
+					$('questionThree').val().trim(),
+					$('questionFour').val().trim(),
+					$('questionFive').val().trim(),
+					$('questionSix').val().trim(),
+					$('questionSeven').val().trim(),
+					$('questionEight').val().trim(),
+					$('questionNine').val().trim(),
+					$('questionTen').val().trim()
+				]
 		};
 
 		console.log(newFriend);
@@ -162,18 +162,27 @@
 				// Clear form
 				$('user_name').val('');
 				$('user_photo').val('');
-				// $('questionOne').val('');
-				// $('questionTwo').val('');
-				// $('questionThree').val('');
-				// $('questionFour').val('');
-				// $('questionFive').val('');
-				// $('questionSix').val('');
-				// $('questionSeven').val('');
-				// $('questionEight').val('');
-				// $('questionNine').val('');
-				// $('questionTen').val('');
+				$('questionOne').val('');
+				$('questionTwo').val('');
+				$('questionThree').val('');
+				$('questionFour').val('');
+				$('questionFive').val('');
+				$('questionSix').val('');
+				$('questionSeven').val('');
+				$('questionEight').val('');
+				$('questionNine').val('');
+				$('questionTen').val('');
 			});
 	});
+
+	// I am getting an error that is not letting any of the .post info work
+	// Warning: a promise was rejected with a non-error: [object String] is the error I am getting and I cannot get rid of it
+
+	// Next step is converting the answers into an array (I would probably make a loop to get the answers for the questions)
+
+	// Then compaire the answers againt the other friends, and find a match
+
+	// I would then want to show the two matches on the page
 </script>
 
 
